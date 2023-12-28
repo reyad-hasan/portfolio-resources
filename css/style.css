@@ -70,9 +70,11 @@ nav {
   padding: 8px 180px;
 }
 .nav_title {
-  color: var(--titleColor);
   font-size: 45px;
   font-weight: 800;
+}
+.nav_title a {
+  color: var(--titleColor);
 }
 nav > ul {
   display: flex;
@@ -275,4 +277,5 @@ textarea {
 .from_area textarea {
   width: 100%;
   height: 200px;
+  margin-bottom: 30px;
 }
