@@ -3,3 +3,64 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primaryColor: #fd6e0a;
+  --secondaryColor: #474747;
+  --titleColor: #181818;
+}
+/* common share styles */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.logo_title {
+  color: var(--primaryColor);
+}
+.btn_primary {
+  background-color: var(--primaryColor);
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  padding: 12px 18px;
+}
+.btn_primary a {
+  color: white;
+  text-decoration: none;
+}
+/* navbar section style from here */
+.header {
+  background-color: #fff8f3;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 180px;
+  border: 1px solid red;
+}
+.nav_title {
+  color: var(--titleColor);
+  font-size: 45px;
+  font-weight: 800;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  font-weight: 500;
+  margin: 0 20px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+/* banner section style from here */
+.banner {
+  padding: 30px 30px 30px 180px;
+  display: flex;
+}
+.banner .profiled_picture {
+  width: 500px;
+}
