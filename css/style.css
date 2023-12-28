@@ -6,6 +6,7 @@
 :root {
   --primaryColor: #fd6e0a;
   --secondaryColor: #474747;
+  --lightColor: #757575;
   --titleColor: #181818;
   --primaryBackground: #fff8f3;
 }
@@ -85,7 +86,7 @@ nav a {
   margin: 10px 0;
 }
 .banner_description {
-  color: var(--secondaryColor);
+  color: var(--lightColor);
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
@@ -94,7 +95,6 @@ nav a {
 /* main section style from here */
 .main_section {
   padding: 100px 180px;
-  border: 1px solid red;
 }
 /* about section style from here */
 .about {
@@ -109,22 +109,100 @@ nav a {
   font-weight: 700;
 }
 .about_description {
-  color: var(--secondaryColor);
+  color: var(--lightColor);
   text-align: center;
   font-size: 18px;
   line-height: 28px;
   margin: 30px 0px;
 }
 .about_contact_information {
-  color: var(--secondaryColor);
+  color: var(--lightColor);
   text-align: center;
-  font-size: 18px;
+  font-size: 18p / x;
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
 }
+.about_contact_information h3 {
+  font-size: 18px;
+  color: var(--secondaryColor);
+}
 /* what i do section style start from here */
 .what_id_section {
-  padding: 100px;
-  border: 1px solid red;
+  padding: 100px 0px;
+}
+.course_section {
+  width: 267px;
+  height: 377px;
+  box-shadow: 0.5px 0.5px 100px gray;
+}
+.skill_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skill {
+  padding: 30px;
+  height: 377px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  /* border: 1px solid blue; */
+}
+.skill_title {
+  color: var(--titleColor);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0px;
+}
+.skill_description {
+  color: var(--lightColor);
+}
+/* A summary of My resume section start from here */
+.summary_of_resume_section {
+  padding: 100px 0px;
+  border: 1px solid violet;
+}
+.education_container {
+  display: flex;
+  gap: 80px;
+}
+.left_section {
+  width: 720px;
+}
+.right_section {
+  width: 720px;
+}
+.education_heading {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--secondaryColor);
+  margin-top: 100px;
+  margin-bottom: 8px;
+}
+.education_title {
+  color: var(--secondaryColor);
+  font-size: 20px;
+  font-weight: 700;
+}
+.education_center_name {
+  color: var(--lightColor);
+  font-size: 20px;
+  font-weight: 500;
+}
+.education_description {
+  color: var(--lightColor);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+div hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: var(--lightColor);
+}
+.download {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
