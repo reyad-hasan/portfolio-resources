@@ -7,6 +7,7 @@
   --primaryColor: #fd6e0a;
   --secondaryColor: #474747;
   --titleColor: #181818;
+  --primaryBackground: #fff8f3;
 }
 /* common share styles */
 body {
@@ -29,14 +30,17 @@ body {
 }
 /* navbar section style from here */
 .header {
-  background-color: #fff8f3;
+  background-color: var(--primaryBackground);
+  background-image: url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  /* height: 100vh; */
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px 180px;
-  border: 1px solid red;
 }
 .nav_title {
   color: var(--titleColor);
@@ -58,9 +62,69 @@ nav a {
 }
 /* banner section style from here */
 .banner {
-  padding: 30px 30px 30px 180px;
+  padding: 0px 30px 0 180px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.banner .profiled_picture {
+.banner .banner_content {
+  max-width: 500px;
+}
+.banner .profile_picture {
   width: 500px;
+}
+.banner_greeting {
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+.banner_title {
+  font-size: 85px;
+  font-weight: 700;
+  color: var(--titleColor);
+  margin: 10px 0;
+}
+.banner_description {
+  color: var(--secondaryColor);
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* main section style from here */
+.main_section {
+  padding: 100px 180px;
+  border: 1px solid red;
+}
+/* about section style from here */
+.about {
+  background-color: var(--primaryBackground);
+  padding: 100px;
+  border-radius: 7px;
+}
+.section_title {
+  color: var(--titleColor);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+.about_description {
+  color: var(--secondaryColor);
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 30px 0px;
+}
+.about_contact_information {
+  color: var(--secondaryColor);
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+/* what i do section style start from here */
+.what_id_section {
+  padding: 100px;
+  border: 1px solid red;
 }
