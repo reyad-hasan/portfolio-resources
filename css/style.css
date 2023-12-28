@@ -18,29 +18,42 @@ body {
   color: var(--primaryColor);
 }
 .btn_primary {
-  background-color: var(--primaryColor);
-  font-size: 20px;
-  font-weight: 700;
   border: 0;
-  border-radius: 5px;
-  padding: 12px 18px;
 }
 .btn_primary a {
   color: white;
   text-decoration: none;
+  background-color: var(--primaryColor);
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 12px 18px;
+  font-size: 20px;
+  border: 1px solid #fd6e0a;
+  transition: 0.5s;
+}
+.btn_primary a:hover {
+  color: var(--primaryColor);
+  background-color: white;
+  border: 1px solid #fd6e0a;
 }
 .contact_btn {
+  border: 0;
+}
+.contact_btn a {
+  background-color: white;
+  text-decoration: none;
+  color: var(--primaryColor);
   border-radius: 5px;
   padding: 12px 18px;
   font-size: 20px;
   font-weight: 700;
-  border: 0;
   border: 1px solid #fd6e0a;
   margin-left: 10px;
+  transition: 0.5s;
 }
-.contact_btn a {
-  text-decoration: none;
-  color: var(--primaryColor);
+.contact_btn a:hover {
+  color: white;
+  background-color: var(--primaryColor);
 }
 /* navbar section style from here */
 .header {
@@ -216,7 +229,7 @@ div hr {
   padding: 10px 50px;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 /* footer section style start from here */
 .footer_section {
@@ -230,11 +243,20 @@ div hr {
 }
 .social_link {
   font-size: 22px;
-  color: var(--primaryColor);
+  cursor: pointer;
 }
-.social_link i {
+.social_link .fa-brands {
   margin-right: 10px;
   margin-top: 12px;
+  transition: 0.5s;
+  background-color: var(--primaryBackground);
+  color: var(--primaryColor);
+  padding: 15px;
+  border-radius: 5px;
+}
+.social_link .fa-brands:hover {
+  color: white;
+  background-color: var(--primaryColor);
 }
 .footer_right_section {
   margin-left: 500px;
